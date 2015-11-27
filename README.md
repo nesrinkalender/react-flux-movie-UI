@@ -1,5 +1,5 @@
 # react-flux-movie-UI
-reactJS and flux app of a movie service.
+reactJS and flux app of a movie service built for fun.
 
 
 UI based on :
