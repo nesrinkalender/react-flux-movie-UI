@@ -1,0 +1,40 @@
+/* Base Application Styles */
+@import 'bourbon';
+@import 'common/common';
+
+html {
+  @include box-sizing(border-box);
+}
+*, *:before, *:after {
+  @include box-sizing(inherit);
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  @include font-smoothing;
+
+  // font-family: $monts;
+  color: white;
+  color: rgba(250,250,250,1);
+  background: white;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    color: rgba(250,250,250,0.9);
+    text-decoration: none;
+    @include transition-property(color);
+    @include transition-duration(0.4s);
+    @include animation-timing-function($ease-out-expo);
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.main-view {
+  @include column(.80, right);
+}

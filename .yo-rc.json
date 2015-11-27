@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "thirdshelfFrontEndTest",
+    "style": "scss",
+    "postcss": false
+  }
+}

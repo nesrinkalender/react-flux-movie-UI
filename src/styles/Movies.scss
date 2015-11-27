@@ -1,0 +1,18 @@
+@import "bourbon";
+@import "common/common";
+
+.movies-component {
+  display: block;
+  position: relative;
+  @include clearfix();
+  @include size(100% auto);
+
+  .movie {
+    position: relative;
+    @include size(100% 100%);
+    @include column(0.20);
+    @include aspect-ratio(16, 19);
+    margin-bottom: rem(30);
+  }
+
+}
